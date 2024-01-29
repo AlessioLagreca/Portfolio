@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  background-color: lightblue;
+  padding: 2rem 2rem 2rem 2rem;
+}
+
+.profile-pic-container {
+}
+
+.profile-picture {
+  max-height: 500px;
+  border-radius: 10%;
+}
+
+.about-me {
+  background-color: black;
+  color: white;
+  font-size: 2rem;
+  padding: 0 2rem 0 2rem;
+  margin: 3rem 0 3rem 0;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/* MAIN CONTENT */
+
+.main-content {
+  display: grid;
+  background-color: sandybrown;
+}
+
+.progetti {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-gap: 2rem;
+  padding-bottom: 3rem;
+}
+
+.carta {
+  width: 25rem;
+  height: 15rem;
+  background-color: white;
+  border-radius: 1rem;
+  border-left: 1rem solid salmon;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  color: rgb(101, 101, 101);
+  padding: 3rem 2rem 1rem 2rem;
+  font-size: 1.1rem;
+  position: relative;
+  justify-self: center;
+}
+
+.titolo {
+  grid-column: 1 / -1;
+  font-size: 3rem;
+  font-weight: 700;
+  justify-self: center;
+  margin-top: 3rem;
+}
+
+.icone {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.icona {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  background-color: skyblue;
+  padding: 3rem;
+}
+
+.info {
+  padding-right: 8rem;
+  font-size: 1.5rem;
+}
+
+.contact {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.personal-info {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.icona2 {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+}
+
+.icone-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.icona3 {
+  width: 3rem;
+  height: 3rem;
+}
+
+.programming {
+  max-height: 400px;
+}
+
+/* @media (max-width: 1800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    width: 100%;
+  }
+} */
