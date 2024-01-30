@@ -28,9 +28,9 @@ body {
 
 /* MAIN CONTENT */
 
-.main-content {
-  display: grid;
-  background-color: sandybrown;
+#main {
+  height: 100vh;
+  background-image: url(images/1bithalftone-purple3.png);
 }
 
 /* FOOTER */
@@ -168,4 +168,123 @@ body {
     max-width: 100%;
     margin-top: 1rem;
   }
+}
+
+/* DDDDDEEEEEEEEEEEEEESSSSSSSSSSSSSSSSKKKKKKKKKKKKTTTTTTTTTTTTTTOOOOOOOOOOOPPPPPPPPPPPPP */
+
+.desktop {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#menubar {
+  position: relative;
+  font-family: courier, mono-space;
+  font-size: 14px;
+  font-weight: bold;
+  height: 18px;
+  background-color: white;
+  border-bottom: 1px solid black;
+  margin-bottom: 10px;
+  z-index: 999999;
+}
+
+.menu {
+  position: relative;
+  z-index: 99999;
+  float: left;
+  height: 16px;
+  overflow: hidden;
+  padding-left: 5px;
+  margin-right: 8px;
+  padding-top: 1px;
+  cursor: pointer;
+}
+
+.menu .tendina {
+  background-color: #fff;
+  border: 1px #808080;
+  box-shadow: 3px 3px 6px #6e7ad4;
+  white-space: nowrap;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: default;
+}
+
+.menu > p {
+  margin: 0px;
+  padding: 0px 5px;
+  height: 18px;
+}
+
+.menu:hover {
+  overflow: visible;
+}
+
+.menu p {
+  cursor: pointer;
+}
+
+.menu p:hover {
+  background-color: black;
+  color: white;
+}
+
+.menu .menubox {
+  position: absolute;
+  z-index: 99999;
+  min-width: 100px;
+  background-color: #fff;
+  border: 1px #808080;
+  box-shadow: 3px 3px 6px #808080;
+  white-space: nowrap;
+  padding: 5px;
+  margin-bottom: 5px;
+  cursor: default;
+}
+.menu .item {
+  margin: 0px;
+  padding: 2px 4px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+}
+.menu p:hover a {
+  color: white;
+}
+
+.cartella {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 90px;
+  margin: 2rem 1rem 2rem 1rem;
+}
+
+.cartella .folder-name {
+  width: fit-content;
+  text-align: center;
+  margin: 0;
+  padding: 2px 4px;
+  margin-top: 0.5rem;
+  background-color: white;
+}
+
+.cartella .folder-name:hover,
+.cartella {
+  cursor: pointer;
+}
+
+.cartella:hover .folder-name {
+  background-color: black;
+  color: white;
+}
+
+.icona {
+  width: 2.2rem;
+  height: 2.2rem;
 }
