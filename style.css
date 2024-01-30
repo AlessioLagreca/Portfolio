@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
 }
@@ -12,18 +17,25 @@ body {
 }
 
 .profile-picture {
-  max-height: 500px;
+  max-height: 300px;
   border-radius: 10%;
+  border: 1rem solid #afaff5;
 }
 
 .about-me {
-  background-color: black;
-  color: white;
-  font-size: 2rem;
-  padding: 0 2rem 0 2rem;
+  background: url(images/1bithalftone-purple3.png);
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 1rem 2rem 1rem 2rem;
   margin: 3rem 0 3rem 0;
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
+  max-width: 40%;
+}
+
+.titolo {
+  font-size: 3rem;
 }
 
 /* MAIN CONTENT */
