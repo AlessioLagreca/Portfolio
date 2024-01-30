@@ -81,11 +81,12 @@ body {
   display: flex;
   background-color: skyblue;
   padding: 3rem;
+  gap: 2rem;
 }
 
 .info {
-  padding-right: 8rem;
   font-size: 1.5rem;
+  padding-left: 2rem;
 }
 
 .contact {
@@ -126,10 +127,12 @@ body {
   .header {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
 
   .about-me {
     border-radius: 2rem;
+    margin: 2rem 0 1rem 0;
   }
   .footer {
     display: flex;
@@ -149,10 +152,12 @@ body {
   .header {
     flex-direction: column;
     align-items: center;
+    padding: 1rem;
   }
 
   .about-me {
     border-radius: 2rem;
+    margin: 1rem 0 1rem 0;
   }
 
   .footer {
@@ -165,13 +170,44 @@ body {
     max-height: 300px;
   }
 
+  .progetti {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem important;
+    padding-bottom: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .carta {
+    width: clamp(7rem, 15rem, 20rem);
+
+    background-color: white;
+    border-radius: 1rem;
+    border-left: 1rem solid salmon;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    color: rgb(101, 101, 101);
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.1rem;
+    position: relative;
+    justify-self: center;
+  }
+
+  .icone {
+    bottom: 0.8rem;
+    right: 0.8rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .icona {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
   .programming {
     max-height: none;
     max-width: 100%;
     margin-top: 1rem;
-  }
-
-  .carta {
-    width: 15rem;
   }
 }
