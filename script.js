@@ -1,6 +1,6 @@
 const mainDesktop = document.getElementById("main");
 
-function apriFinestra() {
+function apriFinestra(nome) {
   const finestra = document.createElement("div");
   finestra.className = "finestra";
 
@@ -10,6 +10,8 @@ function apriFinestra() {
 
   const topName = document.createElement("div");
   topName.className = "topName";
+  topName.textContent = nome.classList.item(1);
+  topBar.appendChild(topName);
 
   const closeButton = document.createElement("div");
   closeButton.className = "closeBtn";

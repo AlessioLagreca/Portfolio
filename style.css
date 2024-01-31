@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  background-color: #c8c8c8;
 }
 
 .header {
@@ -258,6 +259,8 @@ body {
   position: relative;
   height: 100vh;
   background-image: url(images/1bithalftone-purple3.png);
+  margin: 3rem 10rem;
+  border: 2px solid black;
 }
 
 .cartella {
@@ -318,7 +321,9 @@ body {
 .topName {
   background-color: white;
   margin: 0 auto;
+  padding: 0 3px;
   height: 20px;
+  width: fit-content;
 }
 
 .closeBtn {
