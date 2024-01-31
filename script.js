@@ -16,7 +16,13 @@ function apriFinestra(nome) {
   const closeButton = document.createElement("div");
   closeButton.className = "closeBtn";
   closeButton.style.cursor = "pointer";
+  closeButton.addEventListener("click", chiudiFinestra);
   topBar.appendChild(closeButton);
 
   mainDesktop.appendChild(finestra);
+}
+
+function chiudiFinestra() {
+  const finestra = document.querySelector(".finestra");
+  finestra.remove();
 }
