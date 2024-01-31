@@ -39,13 +39,6 @@ body {
   margin-bottom: 0.5rem;
 }
 
-/* MAIN CONTENT */
-
-#main {
-  height: 100vh;
-  background-image: url(images/1bithalftone-purple3.png);
-}
-
 /* FOOTER */
 
 .footer {
@@ -195,7 +188,7 @@ body {
   font-family: courier, mono-space;
   font-size: 14px;
   font-weight: bold;
-  height: 18px;
+  height: 20px;
   background-color: white;
   border-bottom: 1px solid black;
   margin-bottom: 10px;
@@ -229,7 +222,7 @@ body {
 
 .menu > p {
   margin: 0px;
-  padding: 0px 5px;
+  padding: 1px 5px;
   height: 18px;
 }
 
@@ -260,6 +253,12 @@ body {
 }
 
 /* DDDDDEEEEEEEEEEEEEESSSSSSSSSSSSSSSSKKKKKKKKKKKKTTTTTTTTTTTTTTOOOOOOOOOOOPPPPPPPPPPPPP */
+
+#main {
+  position: relative;
+  height: 100vh;
+  background-image: url(images/1bithalftone-purple3.png);
+}
 
 .cartella {
   display: flex;
@@ -295,4 +294,39 @@ body {
 .icona {
   width: 2.2rem;
   height: 2.2rem;
+}
+
+/* FINESTRA */
+
+.finestra {
+  position: absolute;
+  top: 6rem;
+  left: 6rem;
+  height: 270px;
+  width: 350px;
+  border: 2px solid rgb(28, 4, 87);
+  background-color: white;
+}
+
+.topBar {
+  background: url(images/1bithalftone-purple2.png);
+  border-bottom: 1px solid black;
+  height: 20px;
+  position: relative;
+}
+
+.topName {
+  background-color: white;
+  margin: 0 auto;
+  height: 20px;
+}
+
+.closeBtn {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  right: 4px;
+  top: 2px;
+  background-color: white;
+  border: 1px solid black;
 }
